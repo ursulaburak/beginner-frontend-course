@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <h2>Example</h2>
+    <form>
+        <fieldset>
+            <legend>Kişisel</legend>
+            <div>
+<label form="fullname">İsim ve Soyisim</label>
+<input type="text" id="fullname">
+            </div>
+            <div>
+                <label for="gender">cinsiyet</label>
+                <input type="radio" name="gender" value="male"> Erkek
+                <input type="radio" name="gender" value="female"> Kadın
+
+            </div>
+            <div>
+                <label for="birthday">Doğum Tarihi</label>
+                <input type="date" id="birthday">
+            </div>
+            <div>
+                <label for="city">Şehir</label>
+                <select id="city">
+                    <option value="">Seçiniz..</option>
+                    <optgroup label="Marmara"></optgroup>
+                    <option value="Istanbul"Istanbul></option>
+                    <option value="Edirne"Edirne></option>
+                    </optgroup>
+                    <optgroup label="Ege"></optgroup>
+                    <option value="Izmir"Izmir></option>
+                    <option value="Manisa"Manisa></option>
+                    </optgroup>
+                    </select>
+                    </div>
+                    <div>
+                        <label>Hobiler</label>
+                        <input type="checkbox"name="hobbies[]"value="Spor">Spor
+                        <input type="checkbox"name="hobbies[]"value="İngilizce">İngilizce
+                        <input type="checkbox"name="hobbies[]"value="Matematik">Matematik
+                    </div>
+                    <div>
+                        <label for="cv">Özgeçmiş</label>
+                        <input type="file" id="cv">
+
+                    </div>
+                </select>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>İletişim</legend>
+            <div>
+                <label for="name">Adınız:</label><br>
+  <input type="text" id="name" name="name"><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  
+  <label for="message">Mesajınız:</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  
+  <input type="submit" value="Gönder">
+
+  <label for="password">Şifreniz:</label><br>
+  <input type="password" id="password">
+            </div>
+            <div>
+                <button type="Submit">Kayıt Ol</button>
+                <button type="Remove">Temizle</button>                
+            </div>
+        </fieldset>
+    </form>
+
+
+
+</body>
+</html>
